@@ -1,8 +1,9 @@
 import React from 'react';
 import { Grid, Typography, Button } from '@material-ui/core';
-import {Box} from '@mui/material';
+import { Box } from '@mui/material';
 import './Home.css';
 import Carrossel from '../../components/carrosel/Carrossel';
+import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
 
 function Home() {
     return (
@@ -13,8 +14,8 @@ function Home() {
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>expresse aqui os seus pensamentos e opiniões!</Typography>
                     </Box>
-                        <Box marginRight={1}>
-                    <Box display="flex" justifyContent="center">
+                    <Box marginRight={1}>
+                        <Box display="flex" justifyContent="center">
                         </Box>
                         <Button variant="outlined" className='botao'>Ver Postagens</Button>
                     </Box>
@@ -23,6 +24,7 @@ function Home() {
                     <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
+                    <TabPostagem />
                 </Grid>
             </Grid>
 
