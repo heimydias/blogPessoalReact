@@ -1,8 +1,8 @@
-import React from 'react';
-import { Grid, Typography, Button } from '@material-ui/core';
+import { Button, Grid, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
+import { Link } from 'react-router-dom';
 import './Home.css';
-import Carrossel from '../../components/carrosel/Carrossel';
+import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
 
 function Home() {
@@ -12,27 +12,24 @@ function Home() {
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>expresse aqui os seus pensamentos e opiniões!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Expresse aqui os seus pensamentos e opiniões!</Typography>
                     </Box>
-                    <Box marginRight={1}>
-                        <Box display="flex" justifyContent="center">
+                    <Box display="flex" justifyContent="center">
+                        <Box marginRight={1}>
+                            <ModalPostagem />
                         </Box>
-                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        <Link to='/posts'>
+                            <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        </Link>
                     </Box>
                 </Grid>
-                <Grid item xs={6} >
-                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
-                </Grid>
+                {/* <Grid item xs={6} >
+                    <img
+                </Grid> */}
                 <Grid xs={12} className='postagens'>
-                    <TabPostagem />
+                <TabPostagem />
                 </Grid>
             </Grid>
-
-            {/* <Grid container style={{ marginTop: "3x", marginBottom: "2px" }}>
-                <Grid item xs={12}>
-                    <Carrossel />
-                </Grid>
-            </Grid> */}
         </>
     );
 }

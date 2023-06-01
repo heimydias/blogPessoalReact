@@ -6,10 +6,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+
 // Importando seu CSS
 import "./Carrossel.css";
 
-// Importanto Componentes do Swiper
+// Importando Componentes do Swiper
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 function Carrossel() {
@@ -32,19 +33,19 @@ function Carrossel() {
             >
 
                 <SwiperSlide>
-                    <img src="https://i.imgur.com/XW7K4B9.jpg" alt="Imagem" />
+                    <img src="https://wallpapercave.com/wp/wp8151225.jpg" alt="Imagem" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <img src="https://i.imgur.com/3F2anW4.jpg" alt="Imagem" />
+                    <img src="https://w.forfun.com/fetch/00/008ff52a2516af485380ffd409e6c834.jpeg" alt="Imagem" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <img src="https://i.imgur.com/kTngudi.png" alt="Imagem" />
+                    <img src="https://images7.alphacoders.com/333/thumb-1920-333580.jpg" alt="Imagem" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <img src="https://i.imgur.com/xKzJrsm.jpg" alt="Imagem" />
+                    <img src="https://e0.pxfuel.com/wallpapers/565/654/desktop-wallpaper-anime-phone.jpg" alt="Imagem" />
                 </SwiperSlide>
 
             </Swiper>
@@ -52,4 +53,4 @@ function Carrossel() {
     )
 }
 
-export default Carrossel
+export default Carrossel;

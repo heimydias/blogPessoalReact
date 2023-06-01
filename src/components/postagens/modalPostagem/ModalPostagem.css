@@ -1,0 +1,8 @@
+.cursor {
+    cursor: pointer;
+}
+.botaoM{
+    border-color: white !important;
+    background-color: rgb(231, 117, 231) !important;
+    color: white !important;
+}
