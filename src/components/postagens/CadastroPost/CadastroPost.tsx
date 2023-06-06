@@ -174,7 +174,7 @@ function CadastroPost() {
     }
 
     function back() {
-        navigate('/home')
+        navigate('/posts')
     }
 
     return (
